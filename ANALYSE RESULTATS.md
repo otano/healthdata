@@ -1,6 +1,4 @@
-# Analyse des résultats :
-
-## Régression logistique + fine tuning : 
+# Analyse des résultats de la régression logistique :
 
 ## TOUR 1 : 
 
@@ -52,3 +50,20 @@ Accuracy sur test: 0.9930
   model__solver: saga
 ```
 
+
+### Avec SCORING = 'accuracy'
+
+
+
+### Avec SCORING = 'recall_macro'
+
+Comparaison finale :
+- Régression logistique: 0.9745
+- Arbre de décision: 1.0000
+- SVM: 0.9915
+
+### Avec SCORING = 'f1_macro'
+Comparaison finale :
+- Régression logistique: 0.9894
+- Arbre de décision: 1.0000
+- SVM: 0.9915
